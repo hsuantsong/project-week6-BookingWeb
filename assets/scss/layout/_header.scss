@@ -1,4 +1,29 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logo {
+  min-width: 40px;
+  height: 40px;
+
+  @include pc {
+    min-width: 53px;
+    height: 53px;
+  }
+}
+
+.navbar-input {
+  height: 39px;
+
+  @include pc {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.navbar-inputBtn {
+  width: 39px;
+  height: 39px;
+
+  @include pc {
+    width: 55px;
+    height: 55px;
+  }
+
 }

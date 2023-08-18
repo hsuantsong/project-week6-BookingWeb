@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>7TAO</title>
+</head>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+<body>
+  <%- include('./layout/header'); -%>
+
+    <div class="container-fluid mt-8 mb-11">
+      <div class="banner text-light">
+        <p class="fs-5 pt-11 ms-11">19 MAY 2023</p>
+        <p class="fs-3 text-center banner-title mb-5">隔牆有耳-沒有草東的派對</p>
+        <p class="fs-1 text-center mb-7">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>
+          帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！</p>
       </div>
     </div>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 col-lg-2">
+          <div
+            class="border border-2 border-dark category text-center d-flex align-items-center justify-content-center">
+            <a href="#">
+              <img src="../assets/images/cate01.svg" alt="裝飾圖" width="80" height="80">
+              <p class="fs-3 mt-3">演出</p>
+            </a>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </div>
+
+        <div class="col-4 col-lg-2">
+          <div
+            class="border border-2 border-dark category text-center d-flex align-items-center justify-content-center">
+            <a href="#">
+              <img src="../assets/images/cate02.svg" alt="裝飾圖" width="80" height="80">
+              <p class="fs-3 mt-3">聯誼</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 col-lg-2">
+          <div
+            class="border border-2 border-dark category text-center d-flex align-items-center justify-content-center">
+            <a href="#">
+              <img src="../assets/images/cate03.svg" alt="裝飾圖" width="80" height="80">
+              <p class="fs-3 mt-3">展覽</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 col-lg-2">
+          <div
+            class="border border-2 border-dark category text-center d-flex align-items-center justify-content-center">
+            <a href="#">
+              <img src="../assets/images/cate04.svg" alt="裝飾圖" width="80" height="80">
+              <p class="fs-3 mt-3">美食</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 col-lg-2">
+          <div
+            class="border border-2 border-dark category text-center d-flex align-items-center justify-content-center">
+            <a href="#">
+              <img src="../assets/images/cate05.svg" alt="裝飾圖" width="80" height="80">
+              <p class="fs-3 mt-3">戶外</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4 col-lg-2">
+          <div
+            class="border border-2 border-dark category text-center d-flex align-items-center justify-content-center bg-dark">
+            <a href="#">
+              <p class="fs-6 text-secondary">探索<br>更多</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
+
+
+
+
+
+
+
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

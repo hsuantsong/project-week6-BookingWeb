@@ -1,3 +1,15 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  height: 518px;
+  background-image: url('/assets/images/13.jpeg');
+  background-size: cover;
+  background-position: center center;
+
+  .banner-title {
+    margin-top: 279px;
+  }
+}
+
+.category {
+  width: 196px;
+  height: 196px;
 }

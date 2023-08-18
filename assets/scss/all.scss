@@ -1,5 +1,12 @@
 @import "../../node_modules/bootstrap/scss/functions";
+
 @import './utils/variables';
+@import './utils/mixin';
+
+@import './base/typography';
+@import './base/reset';
+
+@import '../icofont/icofont.min.css';
 
 
 @import './layout/header.scss';
