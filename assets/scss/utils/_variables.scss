@@ -398,6 +398,8 @@ $spacers: (
   //48
   12: $spacer * 3.75,
   //60
+  13: $spacer * 1.25,
+  //20
   ) !default; //*custom
 // scss-docs-end spacer-variables-maps
 
@@ -636,6 +638,12 @@ $font-sizes: (
   //60
   6: $font-size-base * 3,
   //48
+  7: $font-size-base * 4,
+  //64
+  8: $font-size-base * 0.875,
+  //14
+  9: $font-size-base * 1.25,
+  //20
   ) !default; //*custom
 // scss-docs-end font-sizes
 
@@ -1311,7 +1319,8 @@ $card-cap-bg: rgba($black, .03) !default;
 $card-cap-color: null !default;
 $card-height: null !default;
 $card-color: null !default;
-$card-bg: $white !default;
+//$card-bg: $white !default;
+$card-bg: none !default; //*custom
 $card-img-overlay-padding: $spacer !default;
 $card-group-margin: $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
