@@ -48,3 +48,56 @@
 .chatgpt-btn {
   width: 100%;
 }
+
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  letter-spacing: 3.2px;
+  width: auto;
+}
+
+.album {
+
+  li {
+    &:nth-child(2n) {
+      transform: rotate(2deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-2deg);
+    }
+  }
+
+  .album-title {
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+
+  img {
+    object-fit: cover;
+    height: 267px;
+
+    @include pc {
+      height: 274px;
+    }
+  }
+
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  background: $dark;
+}
+
+.subscribe-btn {
+  width: 100%;
+}
+
+.subscribe-input {
+  @include pc {
+    margin-bottom: 58px;
+  }
+}
